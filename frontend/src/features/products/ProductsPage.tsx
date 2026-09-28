@@ -117,7 +117,10 @@ export function ProductsPage() {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-end">
-        <Button onClick={openCreateDialog}>
+        <Button
+          onClick={openCreateDialog}
+          className="bg-destructive text-white hover:bg-destructive/90"
+        >
           <Plus />
           Créer
         </Button>
